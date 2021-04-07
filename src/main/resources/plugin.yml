@@ -1,0 +1,6 @@
+name: VillagersWithGuns
+version: ${project.version}
+main: se.hedonix.villagerswithguns.Main
+api-version: 1.16
+authors: [ SirSteveOriginal ]
+description: Villagers can attack
