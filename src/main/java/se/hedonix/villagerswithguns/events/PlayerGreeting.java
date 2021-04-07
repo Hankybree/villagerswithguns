@@ -11,12 +11,6 @@ public class PlayerGreeting implements Listener {
     @EventHandler
     public static void onPlayerJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
-        player.sendMessage(ChatColor.LIGHT_PURPLE + "[VWG]: You will die in 10 seconds (:");
-        try {
-            Thread.sleep(10 * 1000);
-        } catch (Exception e) {
-            player.sendMessage(ChatColor.RED + "[VWG]: Sleep failed");
-        }
-        player.damage(100);
+        player.sendMessage(ChatColor.LIGHT_PURPLE + "[VWG]: Welcome " + player.getName() + "!");
     }
 }
